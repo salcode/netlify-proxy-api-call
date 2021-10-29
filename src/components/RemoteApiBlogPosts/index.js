@@ -10,7 +10,7 @@ export default function RemoteApiBlogPosts() {
 
   useEffect(() => {
     async function fetchData() {
-      const result = await fetch('https://salferrarello.com/wp-content/uploads/outsidewp/example.json');
+      const result = await fetch('/wp-content/uploads/outsidewp/example.json');
       const newBlogPosts = await result.json();
       setBlogPosts(newBlogPosts);
     }
